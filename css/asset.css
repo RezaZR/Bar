@@ -2,7 +2,9 @@
 .register,
 .header,
 .home,
-.table {
+.table,
+.category,
+.dish {
     display: block;
     overflow: hidden;
     color: #fff;
@@ -71,7 +73,7 @@
     margin-bottom: 1em;
 }
 
-.field input {
+input {
     font-size: 1.5em;
     border: 0;
     border-bottom: 1px solid #ccc;
@@ -141,14 +143,16 @@
 }
 
 .home,
-.table {
+.table,
+.category {
     top: 100px;
     position: absolute;
     width: 100%;
     display: grid;
 }
 
-.home__wrapper {
+.home__wrapper,
+.category__wrapper {
     width: 80%;
     margin: auto;
 }
@@ -190,4 +194,56 @@
     margin: auto;
     width: 50%;
     padding: 3em;
+}
+
+.category__wrapper {
+    display: block;
+    overflow: hidden;
+    padding: 3em;
+}
+
+.category__wrapper a {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: .75em auto;
+}
+
+.dish {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    overflow: auto;
+}
+
+.dish__wrapper {
+    width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.dish__wrapper a {
+    margin: 0 .5em;
+}
+
+.dish__wrapper__box {
+    padding: 1em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.dish__wrapper__box img {
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.dish__wrapper__box p {
+    margin: .5em 0;
+}
+
+.dish__wrapper__box input {
+    padding: .15em;
 }
