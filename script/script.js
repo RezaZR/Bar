@@ -1,1 +1,3 @@
-$(document).ready(function() {});
+$(document).ready(function() {
+    $(".center").css({ height: window.innerHeight - 100 });
+});
