@@ -285,9 +285,10 @@ footer {
 }
 
 .btn-standard {
-    background: #eff3f6;
-    background: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
-    color: #000;
+    background: #eff3f6 !important;
+    background: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%) !important;
+    color: #000030;
+    font-weight: 700;
     border: 1px solid #9c9c9c;
 }
 

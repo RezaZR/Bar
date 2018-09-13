@@ -20,26 +20,33 @@
 </head>
 
 <body>
-    <section class="register">
-        <div class="register__wrapper shadow--outset--white">
-            <img src="image/logo-main.png" alt="Main Logo">
-            <div class="register__wrapper__form">
+    <header class="header shadow--outset--white--2">
+        <div class="header__wrapper">
+            <div class="d-flex centered-items">
+                <div class="col-6">
+                    <div class="d-flex justify-content-start">
+                        <img src="image/logo-main.png" alt="Main Logo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex justify-content-end">
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="table center">
+        <div class="table__wrapper shadow--outset--white">
+            <div class="table__wrapper__form">
                 <form action="">
                     <div class="field">
-                        <input type="text" name="fname" id="fname" placeholder="Full Name">
-                        <label for="fname">Full Name</label>
-                    </div>
-                    <div class="field">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="field">
-                        <input type="password" name="password" id="password" placeholder="Password">
-                        <label for="password">Password</label>
+                        <input type="text" name="seat" id="seat" placeholder="Pick a Seat">
+                        <label for="seat">Pick A Seat</label>
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-standard shadow--outset--white" href="index.html">Log In</a>
+                            <a class="btn btn-standard shadow--outset--white" href=".html">Pick a Seat</a>
                         </div>
                     </div>
                 </form>

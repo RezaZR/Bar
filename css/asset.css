@@ -1,7 +1,8 @@
 .login,
 .register,
 .header,
-.home {
+.home,
+.table {
     display: block;
     overflow: hidden;
     color: #fff;
@@ -53,8 +54,9 @@
     width: 80%;
 }
 
-.login__wrapper__form button,
-.register__wrapper__form button {
+.login__wrapper__form a,
+.register__wrapper__form a,
+.table__wrapper__form a {
     margin: 1em 0;
 }
 
@@ -138,7 +140,8 @@
     display: block;
 }
 
-.home {
+.home,
+.table {
     top: 100px;
     position: absolute;
     width: 100%;
@@ -152,15 +155,16 @@
 
 .home__wrapper__card {
     border: 1px solid rgba(255, 255, 255, .5);
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
     background-color: #fff;
+    margin: 1em 0;
+    padding: 1em;
 }
 
 .home__wrapper__card p {
-    font-size: 13px;
+    font-size: 17px;
     color: #000030;
-    margin: 1em 0;
     font-weight: 700;
 }
 
@@ -173,11 +177,17 @@
     height: 50px;
     width: 50px;
     padding: .75em;
-    margin: .5em auto;
+    margin: 0 auto;
 }
 
-.home__wrapper__card__icon:hover,
-.home__wrapper__card__icon:active,
-.home__wrapper__card__icon:focus {
+.home__wrapper__card:hover .home__wrapper__card__icon,
+.home__wrapper__card:active .home__wrapper__card__icon,
+.home__wrapper__card:focus .home__wrapper__card__icon {
     box-shadow: 0px 0px 47px 0px rgba(0, 0, 48, .75);
+}
+
+.table__wrapper {
+    margin: auto;
+    width: 50%;
+    padding: 3em;
 }
