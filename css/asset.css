@@ -4,7 +4,9 @@
 .home,
 .table,
 .category,
-.dish {
+.dish,
+.payment,
+.report {
     display: block;
     overflow: hidden;
     color: #fff;
@@ -41,6 +43,7 @@
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+    padding: 1em;
 }
 
 .login__wrapper img,
@@ -144,7 +147,9 @@ input {
 
 .home,
 .table,
-.category {
+.category,
+.payment,
+.report {
     top: 100px;
     position: absolute;
     width: 100%;
@@ -246,4 +251,102 @@ input {
 
 .dish__wrapper__box input {
     padding: .15em;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.payment,
+.report {
+    overflow: auto;
+}
+
+.payment__wrapper,
+.report__wrapper {
+    margin: 1em auto;
+    width: 95%;
+}
+
+.payment__wrapper__form,
+.report__wrapper__form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.payment__wrapper__form table,
+.report__wrapper__form table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.payment__wrapper__form tr:nth-child(even),
+.report__wrapper__form tr:nth-child(even) {
+    background-color: #1f1f41;
+}
+
+.payment__wrapper__form tr:hover,
+.payment__wrapper__form tr:active,
+.payment__wrapper__form tr:focus,
+.report__wrapper__form tr:hover,
+.report__wrapper__form tr:active,
+.report__wrapper__form tr:focus {
+    background-color: #7d7d7d;
+}
+
+.payment__wrapper__form th,
+.report__wrapper__form th {
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: .5em;
+}
+
+.payment__wrapper__form td,
+.report__wrapper__form td {
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: .5em;
+}
+
+.payment__wrapper__form td .field input,
+.report__wrapper__form td .field input {
+    padding: .15em;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.payment__wrapper__form a,
+.report__wrapper__form a {
+    margin: 1em .5em;
+}
+
+.payment__wrapper__form__details {
+    float: right;
+    width: 50%;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+.payment__wrapper__form__details__container {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.payment__wrapper__form__details__container__title {
+    font-weight: 700;
+}
+
+.payment__wrapper__form__details__container__title,
+.payment__wrapper__form__details__container__content {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.report__wrapper h1 {
+    margin: .5em 0;
+    font-size: 27px;
 }
